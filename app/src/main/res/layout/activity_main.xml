@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -19,6 +20,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="This App demo use library okhttp3:okhttp to send the request in this example i use same code to get data from server on from my said you will find it in the code same request the only different is API link "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="Response:"
                 android:textSize="18dp"
@@ -28,6 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:textColor="@color/colorSilver2"
                 android:layout_marginStart="16dp"
                 android:id="@+id/response_content"
                 />
@@ -46,6 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:textColor="@color/colorSilver2"
                 android:layout_marginStart="16dp"
                 android:id="@+id/data_content"
                 />
@@ -60,41 +71,49 @@
         >
 
         <RelativeLayout
-            android:id="@+id/success_test"
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
 
-            android:background="@drawable/login">
+            <RelativeLayout
+                android:id="@+id/success_test"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="SuccessTest"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold" />
+                android:background="@drawable/login">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SuccessTest"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ur_api"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="220dp"
+
+                android:background="@drawable/test">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Your API"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
 
-        <RelativeLayout
-            android:id="@+id/ur_api"
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="220dp"
-
-            android:background="@drawable/test">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Your API"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
 
     </RelativeLayout>
 
